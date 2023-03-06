@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="galleryCSS.css">
+    <title>Taekwondo</title>
+</head>
+
+<body>
+
+
+    <div style="background-color: black;">
+        <h1
+            style="text-align: center; color: grey; padding-top: 6rem; padding-bottom: 1rem; font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 4rem;">
+            Discipline in motion
+        </h1>
+        <h1
+            style="text-align: center; color: aliceblue; padding-bottom: 1rem; font-weight: bold; letter-spacing: 4px;  font-family: 'Courier New', Courier, monospace;">
+            GALLERY
+        </h1>
+        <h1
+            style="text-align: center; color: grey; padding-bottom: 4rem; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 2rem;">
+            Experience the spirit of Taekwondo with our inspiring gallery.
+        </h1>
+    </div>
+
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="team.html">Team</a>
+            <a href="alumunus.html">Alumni</a>
+        </div>
+    </nav>
+
+
+    <div id="main" class="second-txt" style="margin: 1rem; position: fixed;">
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+    </div>
+
+
+    <div style="margin: 3rem;">
+        <div class="row">
+            <div class="column" style="padding: auto;">
+                <img src="ex10.jpeg" style="float: left; width:100%; border-radius: 10px;"
+                    onclick="openModal();currentSlide(1)" class="hover-shadow cursor zoom">
+            </div>
+            <div class="column" style="padding: auto;">
+                <img src="ex2.jpeg" style="float: right; width:100%; border-radius: 10px;"
+                    onclick="openModal();currentSlide(2)" class="hover-shadow cursor zoom">
+            </div>
+            <div class="column">
+                <img src="ex3.jpeg" style="width:100%; border-radius: 10px;" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow cursor zoom">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="padding: auto;">
+                <img src="ex10.jpeg" style="float: left; width:100%; border-radius: 10px;"
+                    onclick="openModal();currentSlide(4)" class="hover-shadow cursor zoom">
+            </div>
+            <div class="column" style="padding: auto;">
+                <img src="ex4.jpeg" style="float: right; width:100%; border-radius: 10px;"
+                    onclick="openModal();currentSlide(5)" class="hover-shadow cursor zoom">
+            </div>
+            <div class="column">
+                <img src="ex3.jpeg" style="width:100%; border-radius: 10px;" onclick="openModal();currentSlide(6)"
+                    class="hover-shadow cursor zoom">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" style="padding: auto;">
+                <img src="ex2.jpeg" style="float: left; width:100%; border-radius: 10px;"
+                    onclick="openModal();currentSlide(7)" class="hover-shadow cursor zoom">
+            </div>
+            <div class="column" style="padding: auto;">
+                <img src="ex3.jpeg" style="float: right; width:100%; border-radius: 10px;"
+                    onclick="openModal();currentSlide(8)" class="hover-shadow cursor zoom">
+            </div>
+            <div class="column">
+                <img src="ex4.jpeg" style="width:100%; border-radius: 10px;" onclick="openModal();currentSlide(9)"
+                    class="hover-shadow cursor zoom">
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex10.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides" class="center">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex2.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex3.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex10.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex4.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex3.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex2.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex3.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="card-group" style="background-color: black">
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="ex4.jpeg" style="width:100%;">
+                    </div>
+                    <div class="col-sm-2" style="background-color: black;">
+                    </div>
+                </div>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div class="row" style="margin: 1rem;">
+                <div class="column">
+                    <img class="demo cursor" src="ex10.jpeg" style="width:100%;" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex2.jpeg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex3.jpeg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex10.jpeg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex4.jpeg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex3.jpeg" style="width:100%" onclick="currentSlide(6)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex2.jpeg" style="width:100%" onclick="currentSlide(7)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex3.jpeg" style="width:100%" onclick="currentSlide(8)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="ex4.jpeg" style="width:100%" onclick="currentSlide(9)"
+                        alt="Northern Lights">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="card-group footer" style="background-color: black;">
+
+        <div class="col-sm-4">
+        </div>
+
+        <div class="col-sm-4" style="text-align: center;">
+
+            <a href="#"><i class="fa fa-facebook" style="margin: 1rem; padding: 1rem; font-size: 50px; color: #4267B2;">
+                </i></a>
+
+            <a href="#"><i class="fa fa-instagram"
+                    style="margin-top: 5rem; margin: 1rem; padding: 1rem; font-size: 50px; color: #fb3958;">
+                </i></a>
+
+            <a href="#"><i class="fa fa-envelope" style="margin: 1rem; padding: 1rem; font-size: 50px; color: white;">
+                </i></a>
+            <h6
+                style="color: aliceblue;word-spacing: 2px; letter-spacing: 1px; font-size: 13px; font-family: 'Times New Roman', Times, serif;">
+                With <i class="fa fa-heart" style="color: #fb3958;"></i> from
+                Taekwondo Club</h6>
+        </div>
+
+        <div class="col-sm-4">
+        </div>
+    </div>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="galleryJS.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

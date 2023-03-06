@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.img_txt {
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(50, 139, 195);
+}
+
+.center {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.textover img {
+    width: 100%;
+}
+
+.textover {
+    position: relative;
+}
+
+/* REQUIRED */
+.textover figcaption {
+    position: absolute;
+    bottom: -0.5%;
+    left: 0;
+}
+
+.textover figcaption {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.button {
+    justify-content: center;
+    align-items: flex-end;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}

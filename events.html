@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="galleryCSS.css">
+    <link rel="stylesheet" type="text/css" href="eventsCSS.css">
+    <title>Events</title>
+</head>
+
+<body>
+
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="team.html">Team</a>
+            <a href="alumunus.html">Alumni</a>
+        </div>
+    </nav>
+
+
+    <div id="main" class="second-txt" style="margin: 1rem; position: absolute;">
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+    </div>
+
+    <div>
+        <h1
+            style="text-align: center; margin: 2rem; margin-top: 8rem; font-weight: bold; letter-spacing: 4px; color: grey; font-family: 'Courier New', Courier, monospace;">
+            EVENTS
+        </h1>
+        <h1 style="text-align: center;font-size: 55px; font-weight: bold; color: aliceblue;">
+            What We Do.
+        </h1>
+        <p
+            style="color: grey; margin: 1rem; margin-top: 2rem; margin-bottom: 5rem; word-wrap: break-word; font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            Besides the
+            daily exercise at Taekwondo Arena, We also conduct various events like Belt Promotion Test at regular
+            intervals to develop the healthy and competitive nature among students. We also participate in Poomsae or
+            Fight competitions organised near Kanpur. We also do a demonstration of our skills on Republic day and
+            Independence day every year in auditorium.
+        </p>
+    </div>
+
+
+    <!-- <div class="card">
+        <img src="belt_col.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+        </div>
+    </div> -->
+
+    <figure class="textover">
+        <img style="opacity: 0.8;" src="belt_col5.png">
+        <figcaption>
+            <h1>Belt Promotion Test</h1>
+            <button class="button" style="color: aliceblue;" onclick="eventsFunction1()">Show
+                Images</button>
+        </figcaption>
+    </figure>
+
+    <div id="myDIV1">
+        <div class="row">
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex2.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex3.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex2.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex3.jpeg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <figure class="textover">
+        <img src="fighting.png" />
+        <figcaption>
+            <h1> It's just a sleepy boi.</h1>
+            <button class="card-text img_txt" onclick="eventsFunction4()">Show Images</button>
+        </figcaption>
+    </figure> -->
+
+
+    <figure class="textover">
+        <img style="opacity: 0.8;" src="republic.png">
+        <figcaption>
+            <h1>Republic Day Events</h1>
+            <button class="button" style="color: aliceblue;" onclick="eventsFunction2()">Show Images</button>
+        </figcaption>
+    </figure>
+
+    <div id="myDIV2">
+        <div class="row">
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex2.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex3.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex2.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex3.jpeg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <figure class="textover">
+        <img style="opacity: 0.8;" src="fighting.png">
+        <figcaption>
+            <h1>Fighting Competition</h1>
+            <button class="button" style="color: aliceblue;" onclick="eventsFunction3()">Show Images</button>
+        </figcaption>
+    </figure>
+
+    <div id="myDIV3">
+        <div class="row">
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex2.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex3.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex2.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex3.jpeg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <figure class="textover">
+        <img style="opacity: 0.8;" src="republic.png">
+        <figcaption>
+            <h2>Independence Day Events</h2>
+            <button class="button" style="color: aliceblue;" onclick="eventsFunction4()">Show Images</button>
+        </figcaption>
+    </figure>
+
+    <div id="myDIV4">
+        <div class="row">
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex2.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex3.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex2.jpeg" style="width:100%">
+                <img src="ex4.jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="ex10.jpeg" style="width:100%">
+                <img src="ex3.jpeg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <h3
+        style="text-align: center; background-color: aliceblue; padding: 2rem; padding-left: 1rem; padding-right: 1rem; font-family: 'Times New Roman', Times, serif;">
+        Become A Part
+        Of Our Events And
+        Experience
+        The Awesome Journey To Master The Martial Arts.</h3>
+
+    <div class="card-group footer" style="background-color: black;">
+
+        <div class="col-sm-4">
+        </div>
+
+        <div class="col-sm-4" style="text-align: center;">
+
+            <a href="#"><i class="fa fa-facebook" style="margin: 1rem; padding: 1rem; font-size: 50px; color: #4267B2;">
+                </i></a>
+
+            <a href="#"><i class="fa fa-instagram"
+                    style="margin-top: 5rem; margin: 1rem; padding: 1rem; font-size: 50px; color: #fb3958;">
+                </i></a>
+
+            <a href="#"><i class="fa fa-envelope" style="margin: 1rem; padding: 1rem; font-size: 50px; color: white;">
+                </i></a>
+            <h6
+                style=" color: aliceblue;word-spacing: 2px; letter-spacing: 1px; font-size: 13px; font-family: 'Times New Roman', Times, serif;">
+                With <i class="fa fa-heart" style="color: #fb3958;"></i> from
+                Taekwondo Club</h6>
+        </div>
+
+        <div class="col-sm-4">
+        </div>
+    </div>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+    <script src="galleryJS.js"></script>
+
+</body>
+
+</html>
